@@ -11,7 +11,7 @@ Este projeto é uma landing page para dentistas, desenvolvida para apresentar os
 - **Seção Hero:** Destaque inicial com chamada para ação.
 - **Sobre Nós:** Informações sobre a clínica e a equipe.
 - **Serviços:** Detalhes dos serviços oferecidos.
-- **Depoimentos:** Comentários de pacientes.
+- **Depoimentos:** Comentários de pacientes. (inicialmente nao sera implementado)
 - **Contato:** Formulário para contato direto.
 
 ## Tecnologias Utilizadas
