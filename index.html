@@ -16,16 +16,14 @@
     <body>
         <!-- header nav bar -->
         <header>
-            <nav>
                 <span class="logo">DentsLike</span>
-                <ul class="menu">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#services">Serviços</a></li>
-                  <li><a href="#about">Sobre Nós</a></li>
-                  <li><a href="#">Contacto</a></li>
-              </ul>
+                <div class="nav">
+                  <a href="#">Home</a>
+                  <a href="#services">Serviços</a>
+                  <a href="#about">Sobre Nós</a>
+                  <a href="#contact">Contato</a>
+                </div>
               <button><a href="#" class="btn"> Fazer Agendamento</a></button>
-            </nav>
         </header>
         <!-- /header nav bar -->
 
@@ -33,15 +31,18 @@
         <div class="main" id="main">
             <section class="hero">
                 <div class="hero-content">
-                    <h3>Em Feira de Santana - Bahia</h3>
+                    <h5>Em Feira de Santana - Bahia</h3>
                     <h1>Uma Excelente experiencia <span>Odontológica</span></h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit molestie, rhoncus luctus arcu ut eros augue. Eu commodo laoreet parturient quam purus magna pretium luctus.</p>
                     <button><a href="#" class="btn"> Fazer Agendamento</a></button>
-                    <button><a href="#" class="btn">Nossos Serviço</a></button>
+                    <button><a href="#services" class="btn-clear">Nossos Serviço</a></button>
                 </div>
 
                 <div class="hero-img">
-                    <img src="/img/hero.png" alt="Imagem de Dentista fazendo procedimento">
+                    <div class="img-container">
+                        <div class="circle-gradient"></div>
+                        <img src="/img/hero.png" alt="Imagem de Dentista fazendo procedimento">
+                    </div>                    
                 </div>
             </section>
         </div>
@@ -176,7 +177,7 @@
             </div>
         </section>
         <!-- /About Me -->
-         
+
         <!-- Our Clinic -->
         <section class="clinic" id="clinic">
             <h3>As instalações</h3>

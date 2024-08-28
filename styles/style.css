@@ -2,10 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
-    --main-color: #00eeff;
-    --text-color: #ffffff;
-    --bg-color-01: #1f242d;
-    --bg-color-02: #323946;
+    --main-color: #2977D5;
+    --text-color-01: #000000;
+    --text-color-02:#CDDFF2;
+    --text-color-03:#ffffff;
+    --bg-color-01: #FFF9FD;
+    --bg-color-02: #D4E4F4;
     --color-00: #0000001a;
 
 
@@ -27,6 +29,7 @@
     outline: none;
     /* rolar suave na pagina ao clicar nos index */
     scroll-behavior: smooth;  
+    background: none;
 }
 
 html{
@@ -35,9 +38,169 @@ html{
 }
 
 body{
-    /* background-color: var(--bg-color-01);
-    color: var(--text-color); */
+    background-color: var(--bg-color-01);
+    color: var(--text-color-01);
 }
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.1rem;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-color-01);
+}
+
+.logo{
+    font-size: 1.7rem;
+    color: var(--main-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.nav a{
+    font-size: 1.2rem;
+    color: var(--text-color-01);
+    padding: 0.1rem 1rem;
+    transition: 0.4s;
+}
+
+.nav a:hover{
+    color: var(--main-color);
+}
+
+
+section {
+    min-height: 20vh;
+    padding: 6rem 6rem 2rem;
+    border: solid 1px var(--color-04);
+}
+
+span{
+    color: var(--main-color);
+}
+
+.hero, .about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+.about-img img{
+    width: 80%;
+}
+
+.hero-content, .about-content{
+    width: 50%;
+}
+.hero-img{
+    width: 50%; /* Certifique-se de que a soma das larguras seja 100% ou menos */
+    display: flex;
+    justify-content: flex-end; /* Centralizar a imagem */
+    right: 1rem;
+}
+
+.img-container {
+    position: relative; /* Necessário para posicionar o círculo e a imagem corretamente */
+    display: inline-block;
+    align-items: center;
+    width: 70%;
+}
+
+.img-container img {
+    position: relative; /* Garante que a imagem esteja sobre o círculo */
+    z-index: 1; /* Coloca a imagem à frente do círculo */
+    /* width: 80%; Ajuste conforme necessário */
+    width: 24vw;
+    height: auto; /* Mantém a proporção da imagem */
+}
+/* Círculo */
+.circle-gradient {
+    position: absolute; /* Para posicionar o círculo atrás da imagem */
+    top: 50%;
+    left: 50%;
+    width: 35vw; /* Defina o tamanho do círculo */
+    height: 35vw; /* Deve ser igual à largura para ser um círculo */
+    background: linear-gradient(
+        to top, /* Direção do gradiente de baixo para cima */
+        #00296D 0%,   /* 0% */
+        #2977D5 30%,  /* 30% */
+        #44C6E9 55%,  /* 55% */
+        #D4E4F4 85%   /* 85% */
+    );
+    border-radius: 50%; /* Faz o contêiner se tornar um círculo */
+    transform: translate(-58%, -50%); /* Centraliza o círculo */
+    z-index: -1; /* Coloca o círculo atrás da imagem */
+}
+
+
+
+
+
+.hero-content h1, .about-content h1{
+    font-weight: 700;
+    line-height: 1.3;
+
+    font-size: 2.7rem; /*TEST*/  
+}
+
+.hero-content h3, .about-content h3{
+    font-weight: 700;
+    font-size: 1.6rem;
+    
+}
+
+.hero-content p, .about-content p{
+    margin-top: 1.2rem;
+    text-align: justify;
+    letter-spacing: 0.09rem;
+    margin-bottom: 1.2rem;
+   
+
+}
+
+.contact-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-color-02);
+    padding: 6rem 6rem ;
+}
+
+.contact-row-address{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons-contact-row{
+    width: 20%;
+    margin-right: 0.8rem;
+    padding-bottom: 2.5rem;
+    
+}
+.icons-contact-row i{
+    font-size: 3rem;
+    
+}
+.conctact-row-content{
+    width: 80%;
+}
+
+.conctact-row-content h3{
+    margin-bottom: 1rem;
+}
+
+.conctact-row-content p{
+    font-size: 1rem;
+}
+
 
 /* slider clinic para facilitar o desenvolvimento inicei o css do slider o qual nao sei como vai ficar na versão final */
 
@@ -64,3 +227,33 @@ body{
     object-fit: cover;
     scroll-behavior: smooth;
 }
+/* ==== button ==== */
+.btn{
+    display: inline-block;
+    padding: 0.7rem 1.8rem;
+    background-color: var(--main-color);
+    border-radius: 2rem;
+    color: var(--bg-color-01);
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    transition: 0.3s ease;
+    /* margin-top: 1.2rem; */
+    border: none;
+
+}
+
+.btn:hover{
+    box-shadow: 0 0 0.3rem var(--main-color);
+    background-color: inherit;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.btn-clear{
+    background-color: transparent;
+    color: var(--text-color-01);
+    border-bottom: solid 0.1rem var(--main-color);
+}
+
+
+/* ==== button ==== */
