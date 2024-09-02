@@ -7,6 +7,7 @@
     --text-color-02:#CDDFF2;
     --text-color-03:#ffffff;
     --text-color-04:#2977D5;
+    --text-color-05:#44C6E9;
     --bg-color-01: #FFF9FD;
     --bg-color-02: #D4E4F4;
     --bg-color-03: rgba(255, 249, 253, 0.589); /* 60% de opacidade */
@@ -219,14 +220,14 @@ span{
     margin-bottom: 2rem;
 }
 
-.services h4{
+.services h4, .about-content h3{
     font-weight: 500;
     font-size: 1rem;
-    color: var(--text-color-04);
+    color: var(--text-color-05);
     
 }
 
-.services h1{
+.services h1, .about-content h1{
     font-weight: 700;
     font-size: 2.7rem;
     color: var(--main-color);
@@ -288,8 +289,15 @@ span{
 
 
 
+/* ABOUT */
+.about-list ul{
+    padding-left: 2rem;
+}
 
-
+.about-content h1{
+    margin-bottom: 2rem;
+}
+/* /ABOUT */
 
 
 
