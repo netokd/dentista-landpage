@@ -220,14 +220,14 @@ span{
     margin-bottom: 2rem;
 }
 
-.services h4, .about-content h3{
+.services h4, .about-content h3, .contact-titles h3{
     font-weight: 500;
     font-size: 1rem;
     color: var(--text-color-05);
     
 }
 
-.services h1, .about-content h1{
+.services h1, .about-content h1, .contact-titles h1{
     font-weight: 700;
     font-size: 2.7rem;
     color: var(--main-color);
@@ -287,13 +287,26 @@ span{
 
 /* /SERVICES */
 
+/* CLINIC */
 
+.clinic{
+    background: linear-gradient(to bottom, 
+    #FFF9FD 0%, 
+    #D4E4F4 40%, 
+    #D4E4F4 100%
+  );
+}
+
+/* /CLINIC */
 
 /* ABOUT */
 .about-list ul{
     padding-left: 2rem;
 }
 
+.about-list li{
+    font-size: 1.3rem;
+}
 .about-content h1{
     margin-bottom: 2rem;
 }
@@ -301,7 +314,147 @@ span{
 
 
 
+/* CONTACT */
+.contact{
+    background: linear-gradient(to bottom, 
+    #D4E4F4 0%,
+    #2976d5b7 100%
+  );
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+.contact-titles{
+    text-align: right;
+    margin-bottom: 2rem;
+}
 
+
+
+.contact-titles h1, .contact-titles h3, .contact-container{
+    margin:0 3.5rem;
+}
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    
+}
+/* CONTACT CONTENT */
+.contact-content{
+    flex: 1;
+}
+
+.contact-info-line{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    color: var(--text-color-01);
+}
+
+.icons-contact-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.icons-contact-row h3 {
+    margin: 0; /* Remove a margem padrão do h3 para evitar quebra de linha desnecessária */
+    white-space: nowrap; /* Impede a quebra de linha dentro do h3 */
+}
+
+
+.icons-contact-row h3, .conctact-row-content i {
+    font-weight: 500;
+}
+
+.conctact-row-content p {
+    margin: 0; /* Remove a margem padrão do p */
+    padding-left: 4rem; /* Ajuste conforme necessário para alinhar com o h3 */
+}
+
+
+.contact-info-line .contact-social{
+    justify-content: left;
+}
+
+.contact-social{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    gap: 5rem;
+    margin-top: 4rem;
+    padding-left: 4rem; /* Ajuste conforme necessário para alinhar com o h3 */
+}
+
+.contact-social i{
+    font-size: 4rem;
+    color: var(--bg-color-01);
+}
+
+/* CONTACT FORM */
+.contact-form{
+    flex: 1;
+    background: linear-gradient(to top right, 
+    #25252534 0%,   /* Preto no início do gradiente */
+    #44c5e92d 100%  /* Azul escuro ocupa o final */
+    ); /* Gradiente no fundo do card */
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+}
+
+.contact-form h1{
+    margin-bottom: 2rem;
+    color: var(--text-color-03);
+    text-align: left;
+}
+
+.input-box {
+    margin-bottom: 2.5rem; /* Espaçamento entre os campos do formulário */
+}
+
+.input-box input, 
+.input-box textarea {
+  width: 100%; /* Campos ocupam toda a largura disponível */
+  padding: 10px; /* Espaçamento interno dos campos */
+  border-radius: 5px; /* Bordas arredondadas dos campos */
+  border-bottom: 1px solid #ccc; /* Borda leve ao redor dos campos */
+  box-sizing: border-box; /* Inclui padding e border no tamanho total */
+  color: var(--text-color-03);
+  font-size: 1.5rem;
+}
+
+/* Muda a cor do placeholder para branco */
+.input-box input::placeholder,
+.input-box textarea::placeholder {
+  color: var(--text-color-03); /* Cor do placeholder */
+}
+/* /CONTACT */
+
+/* FOOTER */
+footer{
+    background: linear-gradient(to bottom, 
+    #2976d5b7 60%,
+    #2976d5b7 100%
+
+  );
+    min-height: 8rem;
+    color: var(--text-color-02);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: italic;
+}
+/* /FOOTER */
 
 /* slider clinic para facilitar o desenvolvimento inicei o css do slider o qual nao sei como vai ficar na versão final */
 
@@ -332,17 +485,35 @@ span{
 /* /slider clinic para facilitar o desenvolvimento inicei o css do slider o qual nao sei como vai ficar na versão final */
 
 /* ==== button ==== */
+
+.contact-form .btn{
+    width: 18rem;
+    text-align: center;
+    background-color: var(--bg-color-01);
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+
+}
 .btn{
     display: inline-block;
-    padding: 0.7rem 1.8rem;
+    padding: 1.4rem 1.8rem;
     background-color: var(--main-color);
     border-radius: 2rem;
     color: var(--bg-color-01);
     font-weight: 600;
     letter-spacing: 0.1rem;
     transition: 0.3s ease;
-    /* margin-top: 1.2rem; */
+    margin-top: 1.2rem;
     border: none;
+    width: max-content;
+}
+
+.contact-form .btn:hover{
+    box-shadow: 0 0 0.3rem var(--bg-color-01);
+    background-color: inherit;
+    color: var(--text-color-03);
+    cursor: pointer;
 
 }
 
@@ -357,7 +528,25 @@ span{
     background-color: transparent;
     color: var(--text-color-01);
     border-bottom: solid 0.1rem var(--main-color);
+    width: max-content;
+}
+
+.btn-clear:hover{
+    color: var(--main-color);
+    transform: scale(1.3);
 }
 
 
 /* ==== button ==== */
+
+
+/* Remove o botão de incremento/decremento do campo de telefone */
+.input-box input[type="number"] {
+    -moz-appearance: textfield; /* Remove o botão em Firefox */
+}
+  
+.input-box input[type="number"]::-webkit-inner-spin-button,
+.input-box input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Remove o botão em Chrome, Safari e Opera */
+    margin: 0; /* Remove margem adicional */
+}

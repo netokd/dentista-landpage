@@ -4,6 +4,7 @@ Projeto estudo, reproduzindo com html e css um projeto do figma community https:
 Não sera implementado todas as seções inicialmente, e tera mudanças visuais em algumas partes do projeto original
 Este projeto é uma landing page para dentistas, desenvolvida para apresentar os serviços e facilitar o agendamento de consultas.
 
+Concluido exceto a parte do Slider de Imagens, onde ainda não tenho conhecimento de como manipular, vou correr atras desse conhecimento para atualizar.
 
 
 ## Funcionalidades
