@@ -6,8 +6,10 @@
     --text-color-01: #000000;
     --text-color-02:#CDDFF2;
     --text-color-03:#ffffff;
+    --text-color-04:#2977D5;
     --bg-color-01: #FFF9FD;
     --bg-color-02: #D4E4F4;
+    --bg-color-03: rgba(255, 249, 253, 0.589); /* 60% de opacidade */
     --color-00: #0000001a;
 
 
@@ -74,7 +76,7 @@ header{
     color: var(--main-color);
 }
 
-
+/* hero */
 section {
     min-height: 20vh;
     padding: 6rem 6rem 2rem;
@@ -139,8 +141,10 @@ span{
     z-index: -1; /* Coloca o círculo atrás da imagem */
 }
 
+/* /Círculo */
 
 
+/* /hero */
 
 
 .hero-content h1, .about-content h1{
@@ -164,6 +168,8 @@ span{
    
 
 }
+
+/* contact-row */
 
 .contact-row{
     display: flex;
@@ -201,6 +207,93 @@ span{
     font-size: 1rem;
 }
 
+/* /contact-row */
+
+/*  SERVICES */
+.services{
+    background: url("/img/img-bg.png") no-repeat right center;
+    background-size: contain;
+    padding: 2rem;
+    box-sizing: border-box;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.services h4{
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--text-color-04);
+    
+}
+
+.services h1{
+    font-weight: 700;
+    font-size: 2.7rem;
+    color: var(--main-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Define a sombra do texto */
+}
+.services-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+
+.services-card{
+    background: var(--bg-color-03);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-basis: 29rem;
+    margin-top: 2rem;
+    flex-basis: calc(33.33% - 2rem);
+
+    border:1px solid rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+    
+}
+.services-card img{
+    width: 20%;
+    height: 4rem;
+    padding: auto;
+}
+
+.services-card h3{
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--text-color-04);
+    
+}
+
+.services-card p {
+    line-height: 1.6rem; /* Ajusta a altura da linha para 1.6rem */
+    max-height: 10rem; /* Limita a altura máxima do parágrafo */
+    overflow: hidden; /* Esconde o texto que ultrapassa o limite */
+    text-overflow: ellipsis; /* Adiciona "..." ao final do texto se ele for cortado */
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Limita o texto a 6 linhas */
+    -webkit-box-orient: vertical;
+}
+
+
+
+/* /SERVICES */
+
+
+
+
+
+
+
+
+
 
 /* slider clinic para facilitar o desenvolvimento inicei o css do slider o qual nao sei como vai ficar na versão final */
 
@@ -227,6 +320,9 @@ span{
     object-fit: cover;
     scroll-behavior: smooth;
 }
+
+/* /slider clinic para facilitar o desenvolvimento inicei o css do slider o qual nao sei como vai ficar na versão final */
+
 /* ==== button ==== */
 .btn{
     display: inline-block;
