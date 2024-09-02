@@ -81,7 +81,7 @@ header{
 section {
     min-height: 20vh;
     padding: 6rem 6rem 2rem;
-    border: solid 1px var(--color-04);
+    /* border: solid 1px var(--color-04); */
 }
 
 span{
